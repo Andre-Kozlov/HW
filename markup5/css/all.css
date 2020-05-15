@@ -1,0 +1,77 @@
+ a {
+      position: relative;
+    }
+     a { 
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+   }     
+    a:before {
+        content: attr(title);
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        top: 0;
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        background: #3ad8e2;
+        color: #FFF;
+        transition: all .3s;/* Ховер для ссылок*/
+    }
+    
+    a:hover:before {
+        height: 100%;
+    }
+    .menu a {
+        color: #0d446e;
+    }
+    /*
+    div {
+      height: 453px;
+      background: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5)), url(https://github.com/olgamaslovaolga/Alevel-Markup/raw/master/images/img-bgrnr.png); 
+      background-size: cover;
+    }
+    1) размер шрифта 20px;
+2) межстрочный интервал 25px;
+3) отступ первой строки 40px;
+4) межбуквенный интервал 1px;
+5) любой понравившийся шрифт из семейства шрифтов sans-serif;
+6) интервалы между словами 5px;
+    */
+    h2 {
+    text-shadow: 3px 5px 3px #6C9;
+}
+  p { 
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-indent: 40px;
+    line-height: 25px
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    }
+
+.bg-box {
+    border: 5px blue;
+    background: green;
+    width: 800px;
+    height: 600px;
+    background-image: url("../img/dom.jpg"), url("../img/grass-png.png"),url("../img/lamp-png.png"), url("../img/ezh.png"), url("../img/ponchik.png");
+    background-size: 450px auto, 300px auto, 50px auto, 50px auto, 50px auto;
+    background-repeat: no-repeat, repeat-x, repeat-x, repeat-y, repeat-y;
+    background-position: center center, bottom, top, left, right;
+    }
+    div[class^='box1'] {
+        width: 100px;
+        height: 100px;
+        background: repeating-linear-gradient(0deg, green, green 10px, #fff 10px, #fff 20px);
+    }
+    div[class^='box2'] {
+        width: 100px;
+        height: 100px;
+        background: repeating-linear-gradient(130deg, black, black 30px, gray 30px, gray 110px);
+    }
+     div[class^='box3'] {
+        width: 100px;
+        height: 100px;
+        background: radial-gradient(circle, red, red 15px, black 15px);
+       /* background: repeating-radial-gradient(circle, #B9ECFE, #B9ECFE 10px, #82DDFF 10px, #82DDFF 20px);*/
+    }
